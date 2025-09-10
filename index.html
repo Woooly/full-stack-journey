@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Título da Página</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
@@ -86,7 +86,11 @@
                 <li>&lt;label&gt; (Serve para criar um conteiner e colocar um input dentro, pra acessibilidade e organização)
                 <li>&lt;strong&gt; (Negrito de forma mais facil e semântica)
                 <li>&lt;em&gt; (Itálico de forma mais facil e semântica)
-                
+                <li>&lt;code&gt; (Informa um trecho de código semânticamente)</li>
+                <li>&lt;blockquote&gt; (Bloco de texto, contendo a citações longas de alguém geralmente como um parágrafo da fala de um autor em um texto)</li>
+                <li>&lt;cite&gt; (Fornece um contexto para um certo conteúdo, e coloca a frase/palavra em itálico por padrão)</li>
+                <li>&lt;fieldset&gt; (Serve pra agrupar campos de um formulário que são relacionados)</li>
+                <li>&lt;legend&gt; (Serve como um "titulo" para o &lt;fieldset&gt;)</li>
               </ul>
             </div>
 
@@ -99,6 +103,7 @@
                 <li>&lt;meta&gt; (Regras da página, informações sobre a página, como o conjunto de caracteres)</li>
                 <li>&lt;link&gt; (Usada para vincular a página a outros recursos externos, com o css e o js)</li>
                 <li>&lt;input&gt; (Permite o usuário inserir dados na página)</li>
+                <li>&lt;charset&gt; (Define o código dos caracteres usados no código, como UTF-8)</li>
               </ul>
             </div>
 
@@ -116,6 +121,10 @@
                 <li>name="..." (Adiciona um nome ao campo do formulário, para enviar corretamente ao servidor, checkbox sempre marca mais de um, radio não, somente quando tiver name diferente)</li>
                 <li>minlenght="..." (Quantidade minima a se preencher)</li>
                 <li>maxlenght="..." (QUantidade máxima a se preencher)</li>
+                <li>lang="..." (Linguagem do código html)</li>
+                <li>value="..." (Conteúdo do que é enviado pro servidor, diferente do name, lembrando que as regras do name pra checkbox e radio só valem pro name)</li>
+                <li>required (Indica que o preenchimento do campo é obrigatório)</li>
+                <li>for="..." (Conecta a tag &lt;label&gt; com o &lt;input&gt; apenas semântica diferente do name, value)</li>
               </ul>
             </div>
 
