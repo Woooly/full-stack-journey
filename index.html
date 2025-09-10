@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Título da Página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jornada full stack</h1>
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+          <li><a href="#node">Node.js</a></li>
+          <li><a href="#react">React.js</a></li>
+          <li><a href="#typescript">Typescript</a></li>
+          <li><a href="#nextjs">Next.js</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      
+      <hr>
+
+      <section id="html">
+            <h2>HTML</h2>
+              <p>Esqueleto basico de um HTML:</p>
+                <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="pt-BR"&gt;
+                &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Título da Página&lt;/title&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;link rel="icon" href="favicon.ico"&gt;
+                &lt;style&gt;
+                /* CSS interno */
+                &lt;/style&gt;
+                &lt;!-- Ou link para CSS externo --&gt;
+                &lt;!-- &lt;link rel="stylesheet" href="estilos.css"&gt; --&gt;
+                &lt;!-- Outros metadados --&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;header&gt;
+                &lt;!-- Cabeçalho --&gt;
+                &lt;/header&gt;
+                &lt;main&gt;
+                &lt;!-- Conteúdo principal --&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                &lt;!-- Rodapé --&gt;
+                &lt;/footer&gt;
+                &lt;!-- Scripts JS geralmente vão aqui, antes de fechar o body --&gt;
+                &lt;script src="script.js"&gt;&lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+
+            <div>
+              <p>Tags com fechamento:</p>
+              <ul class="tags-fechamento">
+                <li>&lt;p&gt; (Parágrafo)</li>
+                <li>&lt;html&gt; (Início e fim de todo HTML)</li>
+                <li>&lt;head&gt; (Conjunto de instruções pra página como um todo)</li>
+                <li>&lt;body&gt; (Conteúdo do corpo da página)</li>
+                <li>&lt;h1-6&gt; (Títulos e seus subtítulos)</li>
+                <li>&lt;a&gt; (Links)</li>
+                <li>&lt;ul-ol&gt; (Listas não ordenada e ordenada, respectivamente)</li>
+                <li>&lt;li&gt; (Conteúdo dessas listas)</li>
+                <li>&lt;div&gt; (Contêiner de elementos que está dentro de &lt;section&gt; geralmente)</li>
+                <li>&lt;section&gt; (Contêiner de elementos que contem &lt;div&gt; dentro geralmente)</li>
+                <li>&lt;header&gt; (Cabeçalho que fica no &lt;body&gt;)</li>
+                <li>&lt;nav&gt; (Sumário que fica no &lt;header&gt; que fica dentro do &lt;body&gt;)</li>
+                <li>&lt;span&gt; (Contêiner para pequenos textos ou pequenas partes de texto)</li>
+                <li>&lt;main&gt; (Conteúdo principal e único da página)</li>               
+                <li>&lt;footer&gt; (Rodapé da página)</li>
+                <li>&lt;button&gt; (Botão clicável)</li>
+                <li>&lt;form&gt; (Criar formulários)</li>
+                <li>&lt;figure&gt; (Geralmente se coloca img e figcaption que é a legenda da imagem, uma forma mais profissional de inserir imagens)</li>
+                <li>&lt;textarea&gt; (Para áreas de textos maiores)
+                <li>&lt;label&gt; (Serve para criar um conteiner e colocar um input dentro, pra acessibilidade e organização)
+                <li>&lt;strong&gt; (Negrito de forma mais facil e semântica)
+                <li>&lt;em&gt; (Itálico de forma mais facil e semântica)
+                
+              </ul>
+            </div>
+
+            <div>
+              <p>Tags sem fechamento:</p>
+              <ul class="tags-sem-fechamento">
+                <li>&lt;br&gt; (Quebra de linha)</li>
+                <li>&lt;hr&gt; (Usada para criar uma linha horizontal para separar o conteúdo)</li>
+                <li>&lt;img&gt; (Inserir imagem numa página, geralmente usada dentro do bloco semântico figure)</li>
+                <li>&lt;meta&gt; (Regras da página, informações sobre a página, como o conjunto de caracteres)</li>
+                <li>&lt;link&gt; (Usada para vincular a página a outros recursos externos, com o css e o js)</li>
+                <li>&lt;input&gt; (Permite o usuário inserir dados na página)</li>
+              </ul>
+            </div>
+
+            <div>
+              <p>Atributos:</p>
+              <ul class="atributos">
+                <li>placeholder="..." (Texto em área de digitação antes do usuário digitar)</li>
+                <li>class="..." (Uma forma de referenciar o local no css)</li>
+                <li>id="..." (Outra forma de referenciar no css)</li>
+                <li>style="..." (Permite adicionar regras de CSS diretamente na tag, para estilos rápidos e específicos)</li>
+                <li>href="..." (Usado dentro da tag &lt;a&gt; para inserir links) </li>
+                <li>src="..." (Caminho ou link para uma certa imagem, dentro de img ou da tag figure)</li>
+                <li>alt="..." (Legenda na imagem caso ela não tenha exito em carregar)</li>
+                <li>type="..." (Usado dentro do input para dizer o tipo de campo que o usuário vai preencher, texto, número, checkbox, radio, etc)</li>
+                <li>name="..." (Adiciona um nome ao campo do formulário, para enviar corretamente ao servidor, checkbox sempre marca mais de um, radio não, somente quando tiver name diferente)</li>
+                <li>minlenght="..." (Quantidade minima a se preencher)</li>
+                <li>maxlenght="..." (QUantidade máxima a se preencher)</li>
+              </ul>
+            </div>
+
+      </section>
+
+      <hr>
+
+      <section id="css">
+          <div>
+            <h2>CSS</h2>
+              <p>Conteúdo</p>
+          </div>  
+      </section>
+
+      <hr>
+
+      <section id="javascript">
+          <div>
+            <h2>JavaScript</h2>
+              <p>Conteúdo</p>
+          </div>  
+      </section>
+
+      <hr>
+
+      <section id="node">
+          <div>
+            <h2>Node.js</h2>
+              <p>Conteúdo</p>
+          </div>  
+      </section>
+
+      <hr>
+
+      <section id="react">
+          <div>
+            <h2>React.js</h2>
+              <p>Conteúdo</p>
+          </div>  
+      </section>
+
+      <hr>
+
+      <section id="typescript">
+          <div>
+            <h2>Typescript</h2>
+              <p>Conteúdo</p>
+          </div>  
+      </section>
+
+      <hr>
+
+      <section id="nextjs">
+          <div>
+            <h2>Next.js</h2>
+              <p>Conteúdo</p>
+          </div>  
+      </section>
+
+      <hr>
+
+      
+    </main>
+    <footer>
+      <p>Woooly all rights reserved 2025 ©</p>
+    </footer>
+    <!-- Scripts JS geralmente vão aqui, antes de fechar o body -->
+    <script src="script.js"></script>
+  </body>
+</html>

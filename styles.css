@@ -1,0 +1,18 @@
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+.tags-fechamento li{
+    font-weight: bold;
+}
+
+.tags-sem-fechamento li {
+    font-style: italic;
+}
+
+.atributos {
+    font-style: italic;
+    font-weight: bold;
+}
