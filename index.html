@@ -24,9 +24,7 @@
       </nav>
     </header>
     <main>
-      
       <hr>
-
       <section id="html">
             <h2>HTML</h2>
               <p>Esqueleto basico de um HTML:</p>
@@ -127,7 +125,6 @@
                 <li>for="..." (Conecta a tag &lt;label&gt; com o &lt;input&gt; apenas semântica diferente do name, value)</li>
               </ul>
             </div>
-
       </section>
 
       <hr>
@@ -135,7 +132,42 @@
       <section id="css">
           <div>
             <h2>CSS</h2>
-              <p>Conteúdo</p>
+              <p>Seletor {propriedade: valor;}</p>
+              <p><strong>Obs:</strong><em>Todo elemento HTML é uma caixa</em></p>
+              <p><strong>Obs:</strong><em>Todo código CSS deve começar com: </em></p>
+              <pre><code>
+                  * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  }
+              </code></pre>
+              <div>
+                <p>Lista de propriedades: </p>
+                <ul>
+                  <li><strong>font-family</strong> (Define a fonte a ser utilizada no texto)</li>
+                  <li><strong>font-size</strong> (Define o tamanho da fonte a ser utilizada no texto)</li>
+                  <li><strong>font-weight</strong> (Define a espessura/largura da fonte, podendo ser fina normal ou grossa que é o negrito)</li>
+                  <li><strong>text-align</strong> (Define o alinhamento do texto, podendo ser por exemplo, center ou justify)</li>
+                  <li><strong>text-decoration</strong> (Define as decorações do texto, underline etc)</li>
+                  <li><strong>line-height</strong> (Define o espaçamento entre as linhas)</li>
+                  <li><strong>margin</strong> (Define o espaçamento entre a parte externa da caixa e o restante da página)</li>
+                  <li><strong>padding</strong> (Define o espaçamento entre a parte interna da caixa e a borda da caixa)</li>
+                  <li><strong>width</strong> (Define a largura)</li>
+                  <li><strong>height</strong> (Define a altura)</li>
+                  <li><strong>color</strong> (Define a cor do texto, podendo ser: nome da cor, rgb, hexadecimal)</li>
+                  <li><strong>border</strong> (Adiciona uma borda ao redor, 1px solid black)</li>
+                  <li><strong>border-radius</strong> (Arredonda os cantos da borda, podendo fazer a box virar um circulo por exemplo)</li>
+                  <li><strong>position</strong> (Define a posição de um elemento, fixed se rolar a página ele não muda, relative segue o fluxo da página, absolute fica flutuante, static é o padrão, caso não defina)</li>
+                  <li><strong>background</strong> (Define um fundo, com propriedades como color, image, position, repeat ou no repeat)</li>
+                  <li><strong>px-rem-em-*%</strong> (Define unidades de medida, px é absoluta, % é relativa, rem é relativa e não sofre interferencia de pai, em é relativa e sofre)</li>
+                  <li><strong>box-sizing</strong> (Define o tipo da caixa, podendo ser content-box ou border-box)</li>
+                  <li><strong>inline-block</strong> (O inline-block é um valor da propriedade CSS display que combina o melhor dos comportamentos inline e block)</li>
+                  <li><strong>margin-auto</strong> (Coloca o bloco no meio da página, quando quiser o conteúdo no meio se usa text-align: center)</li>
+                  <li><strong>z-index</strong> (Define a ordem na qual os elementos aparecem na página)</li>
+                </ul>
+              </div>
+
           </div>  
       </section>
 
