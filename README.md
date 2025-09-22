@@ -1,5 +1,5 @@
 # FullStack Journey Project
-![Project Status](https://img.shields.io/badge/Status-Completed-green)
+![Project Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 ### Description
 This project was developed with the purpose of helping me grow professionally and enter the job market as a junior full-stack developer.
