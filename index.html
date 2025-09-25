@@ -2,15 +2,15 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
-    <title>Título da Página</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jornada completa de aprendizado full stack - HTML, CSS, JavaScript, Node.js, React, TypeScript e Next.js">
+    <title>Jornada Full Stack - Guia Completo</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
       <h1>Jornada full stack</h1>
-      <hr>
       <nav>
         <ul>
           <li><a href="#html">HTML</a></li>
@@ -24,206 +24,245 @@
       </nav>
     </header>
     <main>
-      <hr>
+      <video autoplay muted loop id="video-de-fundo" loading="lazy">
+        <source src="background.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
       <section id="html">
-            <h2>HTML</h2>
-              <p>Esqueleto basico de um HTML:</p>
-                <pre><code>
-                &lt;!DOCTYPE html&gt;
-                &lt;html lang="pt-BR"&gt;
-                &lt;head&gt;
-                &lt;meta charset="UTF-8"&gt;
-                &lt;title&gt;Título da Página&lt;/title&gt;
-                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                &lt;link rel="icon" href="favicon.ico"&gt;
-                &lt;style&gt;
-                /* CSS interno */
-                &lt;/style&gt;
-                &lt;!-- Ou link para CSS externo --&gt;
-                &lt;!-- &lt;link rel="stylesheet" href="estilos.css"&gt; --&gt;
-                &lt;!-- Outros metadados --&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                &lt;header&gt;
-                &lt;!-- Cabeçalho --&gt;
-                &lt;/header&gt;
-                &lt;main&gt;
-                &lt;!-- Conteúdo principal --&gt;
-                &lt;/main&gt;
-                &lt;footer&gt;
-                &lt;!-- Rodapé --&gt;
-                &lt;/footer&gt;
-                &lt;!-- Scripts JS geralmente vão aqui, antes de fechar o body --&gt;
-                &lt;script src="script.js"&gt;&lt;/script&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-                </code></pre>
+        <h2>HTML</h2>
+        <p>Esqueleto básico de um HTML:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Título da Página&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;link rel="icon" href="favicon.ico"&gt;
+  &lt;style&gt;
+    /* CSS interno */
+  &lt;/style&gt;
+  &lt;!-- Ou link para CSS externo --&gt;
+  &lt;!-- &lt;link rel="stylesheet" href="estilos.css"&gt; --&gt;
+  &lt;!-- Outros metadados --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;!-- Cabeçalho --&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;!-- Conteúdo principal --&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;!-- Rodapé --&gt;
+  &lt;/footer&gt;
+  &lt;!-- Scripts JS geralmente vão aqui, antes de fechar o body --&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
-            <div>
-              <p>Tags com fechamento:</p>
-              <ul class="tags-fechamento">
-                <li>&lt;p&gt; (Parágrafo)</li>
-                <li>&lt;html&gt; (Início e fim de todo HTML)</li>
-                <li>&lt;head&gt; (Conjunto de instruções pra página como um todo)</li>
-                <li>&lt;body&gt; (Conteúdo do corpo da página)</li>
-                <li>&lt;h1-6&gt; (Títulos e seus subtítulos)</li>
-                <li>&lt;a&gt; (Links)</li>
-                <li>&lt;ul-ol&gt; (Listas não ordenada e ordenada, respectivamente)</li>
-                <li>&lt;li&gt; (Conteúdo dessas listas)</li>
-                <li>&lt;div&gt; (Contêiner de elementos que está dentro de &lt;section&gt; geralmente)</li>
-                <li>&lt;section&gt; (Contêiner de elementos que contem &lt;div&gt; dentro geralmente)</li>
-                <li>&lt;header&gt; (Cabeçalho que fica no &lt;body&gt;)</li>
-                <li>&lt;nav&gt; (Sumário que fica no &lt;header&gt; que fica dentro do &lt;body&gt;)</li>
-                <li>&lt;span&gt; (Contêiner para pequenos textos ou pequenas partes de texto)</li>
-                <li>&lt;main&gt; (Conteúdo principal e único da página)</li>               
-                <li>&lt;footer&gt; (Rodapé da página)</li>
-                <li>&lt;button&gt; (Botão clicável)</li>
-                <li>&lt;form&gt; (Criar formulários)</li>
-                <li>&lt;figure&gt; (Geralmente se coloca img e figcaption que é a legenda da imagem, uma forma mais profissional de inserir imagens)</li>
-                <li>&lt;textarea&gt; (Para áreas de textos maiores)
-                <li>&lt;label&gt; (Serve para criar um conteiner e colocar um input dentro, pra acessibilidade e organização)
-                <li>&lt;strong&gt; (Negrito de forma mais facil e semântica)
-                <li>&lt;em&gt; (Itálico de forma mais facil e semântica)
-                <li>&lt;code&gt; (Informa um trecho de código semânticamente)</li>
-                <li>&lt;blockquote&gt; (Bloco de texto, contendo a citações longas de alguém geralmente como um parágrafo da fala de um autor em um texto)</li>
-                <li>&lt;cite&gt; (Fornece um contexto para um certo conteúdo, e coloca a frase/palavra em itálico por padrão)</li>
-                <li>&lt;fieldset&gt; (Serve pra agrupar campos de um formulário que são relacionados)</li>
-                <li>&lt;legend&gt; (Serve como um "titulo" para o &lt;fieldset&gt;)</li>
-              </ul>
-            </div>
+        <div>
+          <p>Tags com fechamento:</p>
+          <ul class="tags-fechamento">
+            <li>&lt;p&gt; (Parágrafo)</li>
+            <li>&lt;html&gt; (Início e fim de todo HTML)</li>
+            <li>&lt;head&gt; (Conjunto de instruções pra página como um todo)</li>
+            <li>&lt;body&gt; (Conteúdo do corpo da página)</li>
+            <li>&lt;h1-6&gt; (Títulos e seus subtítulos)</li>
+            <li>&lt;a&gt; (Links)</li>
+            <li>&lt;ul-ol&gt; (Listas não ordenada e ordenada, respectivamente)</li>
+            <li>&lt;li&gt; (Conteúdo dessas listas)</li>
+            <li>&lt;div&gt; (Contêiner de elementos que está dentro de &lt;section&gt; geralmente)</li>
+            <li>&lt;section&gt; (Contêiner de elementos que contem &lt;div&gt; dentro geralmente)</li>
+            <li>&lt;header&gt; (Cabeçalho que fica no &lt;body&gt;)</li>
+            <li>&lt;nav&gt; (Sumário que fica no &lt;header&gt; que fica dentro do &lt;body&gt;)</li>
+            <li>&lt;span&gt; (Contêiner para pequenos textos ou pequenas partes de texto)</li>
+            <li>&lt;main&gt; (Conteúdo principal e único da página)</li>
+            <li>&lt;footer&gt; (Rodapé da página)</li>
+            <li>&lt;button&gt; (Botão clicável)</li>
+            <li>&lt;form&gt; (Criar formulários)</li>
+            <li>&lt;figure&gt; (Geralmente se coloca img e figcaption que é a legenda da imagem, uma forma mais profissional de inserir imagens)</li>
+            <li>&lt;textarea&gt; (Para áreas de textos maiores)</li>
+            <li>&lt;label&gt; (Serve para criar um conteiner e colocar um input dentro, pra acessibilidade e organização)</li>
+            <li>&lt;strong&gt; (Negrito de forma mais facil e semântica)</li>
+            <li>&lt;em&gt; (Itálico de forma mais facil e semântica)</li>
+            <li>&lt;code&gt; (Informa um trecho de código semânticamente)</li>
+            <li>&lt;blockquote&gt; (Bloco de texto, contendo a citações longas de alguém geralmente como um parágrafo da fala de um autor em um texto)</li>
+            <li>&lt;cite&gt; (Fornece um contexto para um certo conteúdo, e coloca a frase/palavra em itálico por padrão)</li>
+            <li>&lt;fieldset&gt; (Serve pra agrupar campos de um formulário que são relacionados)</li>
+            <li>&lt;legend&gt; (Serve como um "titulo" para o &lt;fieldset&gt;)</li>
+          </ul>
+        </div>
 
-            <div>
-              <p>Tags sem fechamento:</p>
-              <ul class="tags-sem-fechamento">
-                <li>&lt;br&gt; (Quebra de linha)</li>
-                <li>&lt;hr&gt; (Usada para criar uma linha horizontal para separar o conteúdo)</li>
-                <li>&lt;img&gt; (Inserir imagem numa página, geralmente usada dentro do bloco semântico figure)</li>
-                <li>&lt;meta&gt; (Regras da página, informações sobre a página, como o conjunto de caracteres)</li>
-                <li>&lt;link&gt; (Usada para vincular a página a outros recursos externos, com o css e o js)</li>
-                <li>&lt;input&gt; (Permite o usuário inserir dados na página)</li>
-                <li>&lt;charset&gt; (Define o código dos caracteres usados no código, como UTF-8)</li>
-              </ul>
-            </div>
+        <div>
+          <p>Tags sem fechamento:</p>
+          <ul class="tags-sem-fechamento">
+            <li>&lt;br&gt; (Quebra de linha)</li>
+            <li>&lt;hr&gt; (Usada para criar uma linha horizontal para separar o conteúdo)</li>
+            <li>&lt;img&gt; (Inserir imagem numa página, geralmente usada dentro do bloco semântico figure)</li>
+            <li>&lt;meta&gt; (Regras da página, informações sobre a página, como o conjunto de caracteres)</li>
+            <li>&lt;link&gt; (Usada para vincular a página a outros recursos externos, com o css e o js)</li>
+            <li>&lt;input&gt; (Permite o usuário inserir dados na página)</li>
+            <li>&lt;charset&gt; (Define o código dos caracteres usados no código, como UTF-8)</li>
+          </ul>
+        </div>
 
-            <div>
-              <p>Atributos:</p>
-              <ul class="atributos">
-                <li>placeholder="..." (Texto em área de digitação antes do usuário digitar)</li>
-                <li>class="..." (Uma forma de referenciar o local no css)</li>
-                <li>id="..." (Outra forma de referenciar no css)</li>
-                <li>style="..." (Permite adicionar regras de CSS diretamente na tag, para estilos rápidos e específicos)</li>
-                <li>href="..." (Usado dentro da tag &lt;a&gt; para inserir links) </li>
-                <li>src="..." (Caminho ou link para uma certa imagem, dentro de img ou da tag figure)</li>
-                <li>alt="..." (Legenda na imagem caso ela não tenha exito em carregar)</li>
-                <li>type="..." (Usado dentro do input para dizer o tipo de campo que o usuário vai preencher, texto, número, checkbox, radio, etc)</li>
-                <li>name="..." (Adiciona um nome ao campo do formulário, para enviar corretamente ao servidor, checkbox sempre marca mais de um, radio não, somente quando tiver name diferente)</li>
-                <li>minlenght="..." (Quantidade minima a se preencher)</li>
-                <li>maxlenght="..." (QUantidade máxima a se preencher)</li>
-                <li>lang="..." (Linguagem do código html)</li>
-                <li>value="..." (Conteúdo do que é enviado pro servidor, diferente do name, lembrando que as regras do name pra checkbox e radio só valem pro name)</li>
-                <li>required (Indica que o preenchimento do campo é obrigatório)</li>
-                <li>for="..." (Conecta a tag &lt;label&gt; com o &lt;input&gt; apenas semântica diferente do name, value)</li>
-              </ul>
-            </div>
+        <div>
+          <p>Atributos:</p>
+          <ul class="atributos">
+            <li>placeholder="..." (Texto em área de digitação antes do usuário digitar)</li>
+            <li>class="..." (Uma forma de referenciar o local no css)</li>
+            <li>id="..." (Outra forma de referenciar no css)</li>
+            <li>style="..." (Permite adicionar regras de CSS diretamente na tag, para estilos rápidos e específicos)</li>
+            <li>href="..." (Usado dentro da tag &lt;a&gt; para inserir links)</li>
+            <li>src="..." (Caminho ou link para uma certa imagem, dentro de img ou da tag figure)</li>
+            <li>alt="..." (Legenda na imagem caso ela não tenha êxito em carregar)</li>
+            <li>type="..." (Usado dentro do input para dizer o tipo de campo que o usuário vai preencher, texto, número, checkbox, radio, etc)</li>
+            <li>name="..." (Adiciona um nome ao campo do formulário, para enviar corretamente ao servidor, checkbox sempre marca mais de um, radio não, somente quando tiver name diferente)</li>
+            <li>minlength="..." (Quantidade mínima a se preencher)</li>
+            <li>maxlength="..." (Quantidade máxima a se preencher)</li>
+            <li>lang="..." (Linguagem do código html)</li>
+            <li>value="..." (Conteúdo do que é enviado pro servidor, diferente do name, lembrando que as regras do name pra checkbox e radio só valem pro name)</li>
+            <li>required (Indica que o preenchimento do campo é obrigatório)</li>
+            <li>for="..." (Conecta a tag &lt;label&gt; com o &lt;input&gt; apenas semântica diferente do name, value)</li>
+          </ul>
+        </div>
       </section>
 
-      <hr>
 
       <section id="css">
-          <div>
-            <h2>CSS</h2>
-              <p>Seletor {propriedade: valor;}</p>
-              <p><strong>Obs:</strong><em>Todo elemento HTML é uma caixa</em></p>
-              <p><strong>Obs:</strong><em>Todo código CSS deve começar com: </em></p>
-              <pre><code>
-                  * {
-                  margin: 0;
-                  padding: 0;
-                  box-sizing: border-box;
-                  }
-              </code></pre>
-              <div>
-                <p>Lista de propriedades: </p>
-                <ul>
-                  <li><strong>font-family</strong> (Define a fonte a ser utilizada no texto)</li>
-                  <li><strong>font-size</strong> (Define o tamanho da fonte a ser utilizada no texto)</li>
-                  <li><strong>font-weight</strong> (Define a espessura/largura da fonte, podendo ser fina normal ou grossa que é o negrito)</li>
-                  <li><strong>text-align</strong> (Define o alinhamento do texto, podendo ser por exemplo, center ou justify)</li>
-                  <li><strong>text-decoration</strong> (Define as decorações do texto, underline etc)</li>
-                  <li><strong>line-height</strong> (Define o espaçamento entre as linhas)</li>
-                  <li><strong>margin</strong> (Define o espaçamento entre a parte externa da caixa e o restante da página)</li>
-                  <li><strong>padding</strong> (Define o espaçamento entre a parte interna da caixa e a borda da caixa)</li>
-                  <li><strong>width</strong> (Define a largura)</li>
-                  <li><strong>height</strong> (Define a altura)</li>
-                  <li><strong>color</strong> (Define a cor do texto, podendo ser: nome da cor, rgb, hexadecimal)</li>
-                  <li><strong>border</strong> (Adiciona uma borda ao redor, 1px solid black)</li>
-                  <li><strong>border-radius</strong> (Arredonda os cantos da borda, podendo fazer a box virar um circulo por exemplo)</li>
-                  <li><strong>position</strong> (Define a posição de um elemento, fixed se rolar a página ele não muda, relative segue o fluxo da página, absolute fica flutuante, static é o padrão, caso não defina)</li>
-                  <li><strong>background</strong> (Define um fundo, com propriedades como color, image, position, repeat ou no repeat)</li>
-                  <li><strong>px-rem-em-*%</strong> (Define unidades de medida, px é absoluta, % é relativa, rem é relativa e não sofre interferencia de pai, em é relativa e sofre)</li>
-                  <li><strong>box-sizing</strong> (Define o tipo da caixa, podendo ser content-box ou border-box)</li>
-                  <li><strong>inline-block</strong> (O inline-block é um valor da propriedade CSS display que combina o melhor dos comportamentos inline e block)</li>
-                  <li><strong>margin-auto</strong> (Coloca o bloco no meio da página, quando quiser o conteúdo no meio se usa text-align: center)</li>
-                  <li><strong>z-index</strong> (Define a ordem na qual os elementos aparecem na página)</li>
-                </ul>
-              </div>
-
-          </div>  
+        <h2>CSS</h2>
+        <p>Seletor {propriedade: valor;}</p>
+        <p><strong>Obs:</strong> <em>Todo elemento HTML é uma caixa</em></p>
+        <p><strong>Obs:</strong> <em>Todo código CSS deve começar com:</em></p>
+<pre><code>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}</code></pre>
+        
+        <div>
+          <p>Lista de propriedades:</p>
+          <ul>
+            <li><strong>font-family</strong> (Define a fonte a ser utilizada no texto)</li>
+            <li><strong>font-size</strong> (Define o tamanho da fonte a ser utilizada no texto)</li>
+            <li><strong>font-weight</strong> (Define a espessura/largura da fonte, podendo ser fina normal ou grossa que é o negrito)</li>
+            <li><strong>text-align</strong> (Define o alinhamento do texto, podendo ser por exemplo, center ou justify)</li>
+            <li><strong>text-decoration</strong> (Define as decorações do texto, underline etc)</li>
+            <li><strong>line-height</strong> (Define o espaçamento entre as linhas)</li>
+            <li><strong>margin</strong> (Define o espaçamento entre a parte externa da caixa e o restante da página)</li>
+            <li><strong>padding</strong> (Define o espaçamento entre a parte interna da caixa e a borda da caixa)</li>
+            <li><strong>width</strong> (Define a largura)</li>
+            <li><strong>height</strong> (Define a altura)</li>
+            <li><strong>color</strong> (Define a cor do texto, podendo ser: nome da cor, rgb, hexadecimal)</li>
+            <li><strong>border</strong> (Adiciona uma borda ao redor, 1px solid black)</li>
+            <li><strong>border-radius</strong> (Arredonda os cantos da borda, podendo fazer a box virar um círculo por exemplo)</li>
+            <li><strong>position</strong> (Define a posição de um elemento, fixed se rolar a página ele não muda, relative segue o fluxo da página, absolute fica flutuante, static é o padrão, caso não defina)</li>
+            <li><strong>background</strong> (Define um fundo, com propriedades como color, image, position, repeat ou no repeat)</li>
+            <li><strong>px-rem-em-%</strong> (Define unidades de medida, px é absoluta, % é relativa, rem é relativa e não sofre interferência de pai, em é relativa e sofre)</li>
+            <li><strong>box-sizing</strong> (Define o tipo da caixa, podendo ser content-box ou border-box)</li>
+            <li><strong>inline-block</strong> (O inline-block é um valor da propriedade CSS display que combina o melhor dos comportamentos inline e block)</li>
+            <li><strong>margin-auto</strong> (Coloca o bloco no meio da página, quando quiser o conteúdo no meio se usa text-align: center)</li>
+            <li><strong>z-index</strong> (Define a ordem na qual os elementos aparecem na página)</li>
+          </ul>
+        </div>
       </section>
 
-      <hr>
 
       <section id="javascript">
-          <div>
-            <h2>JavaScript</h2>
-              <p>Conteúdo</p>
-          </div>  
-      </section>
+        <h2>JavaScript</h2>
+        <p>Linguagem de programação que adiciona interatividade às páginas web.</p><br>
+        
+        <div>
+          <p><strong>Fundamentos básicos:</strong></p><br>
+          <ul>
+            <li><strong>var, let, const</strong> (Declaração de variáveis)</li>
+            <li><strong>console.log()</strong> (Exibe mensagens no console do navegador)</li>
+            <li><strong>alert()</strong> (Exibe uma caixa de alerta)</li>
+            <li><strong>prompt()</strong> (Solicita entrada do usuário)</li>
+            <li><strong>confirm()</strong> (Exibe uma caixa de confirmação)</li>
+          </ul>
+        </div>
 
-      <hr>
+        <div>
+          <p><strong>Tipos de dados:</strong></p>
+          <ul>
+            <li><strong>String</strong> (Texto: "Hello World")</li>
+            <li><strong>Number</strong> (Números: 42, 3.14)</li>
+            <li><strong>Boolean</strong> (true ou false)</li>
+            <li><strong>Array</strong> (Lista: [1, 2, 3])</li>
+            <li><strong>Object</strong> (Objeto: {nome: "João", idade: 30})</li>
+            <li><strong>null</strong> (Valor nulo)</li>
+            <li><strong>undefined</strong> (Valor indefinido)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Operadores:</strong></p>
+          <ul>
+            <li><strong>=, ==, ===</strong> (Atribuição, igualdade, igualdade estrita)</li>
+            <li><strong>+, -, *, /</strong> (Operadores aritméticos)</li>
+            <li><strong>&&, ||, !</strong> (Operadores lógicos: E, OU, NÃO)</li>
+            <li><strong>>, <, >=, <=</strong> (Operadores de comparação)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Estruturas de controle:</strong></p>
+          <ul>
+            <li><strong>if/else</strong> (Condicionais)</li>
+            <li><strong>for</strong> (Loop com contador)</li>
+            <li><strong>while</strong> (Loop com condição)</li>
+            <li><strong>switch</strong> (Múltiplas condições)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Funções:</strong></p>
+          <ul>
+            <li><strong>function nome()</strong> (Declaração de função)</li>
+            <li><strong>const func = () => {}</strong> (Arrow function)</li>
+            <li><strong>return</strong> (Retorna um valor da função)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>DOM (Document Object Model):</strong></p>
+          <ul>
+            <li><strong>document.getElementById()</strong> (Seleciona elemento por ID)</li>
+            <li><strong>document.querySelector()</strong> (Seleciona elemento por seletor CSS)</li>
+            <li><strong>element.innerHTML</strong> (Altera conteúdo HTML)</li>
+            <li><strong>element.addEventListener()</strong> (Adiciona eventos)</li>
+            <li><strong>element.style</strong> (Modifica estilos CSS)</li>
+          </ul>
+        </div>
+      </section>
 
       <section id="node">
-          <div>
-            <h2>Node.js</h2>
-              <p>Conteúdo</p>
-          </div>  
+        <h2>Node.js</h2>
+        <p>Conteúdo em desenvolvimento...</p>
       </section>
-
-      <hr>
 
       <section id="react">
-          <div>
-            <h2>React.js</h2>
-              <p>Conteúdo</p>
-          </div>  
+        <h2>React.js</h2>
+        <p>Conteúdo em desenvolvimento...</p>
       </section>
-
-      <hr>
 
       <section id="typescript">
-          <div>
-            <h2>Typescript</h2>
-              <p>Conteúdo</p>
-          </div>  
+        <h2>TypeScript</h2>
+        <p>Conteúdo em desenvolvimento...</p>
       </section>
-
-      <hr>
 
       <section id="nextjs">
-          <div>
-            <h2>Next.js</h2>
-              <p>Conteúdo</p>
-          </div>  
+        <h2>Next.js</h2>
+        <p>Conteúdo em desenvolvimento...</p>
       </section>
-
-      <hr>
-
-      
     </main>
+    
     <footer>
       <p>Woooly all rights reserved 2025 ©</p>
+      <button id="botao-topo" aria-label="Voltar ao topo">↑</button>
     </footer>
-    <!-- Scripts JS geralmente vão aqui, antes de fechar o body -->
+    
     <script src="script.js"></script>
   </body>
 </html>
