@@ -20,6 +20,7 @@
           <li><a href="#react">React.js</a></li>
           <li><a href="#typescript">Typescript</a></li>
           <li><a href="#nextjs">Next.js</a></li>
+          <li><a href="#git">Git</a></li>
         </ul>
       </nav>
     </header>
@@ -255,6 +256,84 @@
       <section id="nextjs">
         <h2>Next.js</h2>
         <p>Conteúdo em desenvolvimento...</p>
+      </section>
+
+      <section id="git">
+        <h2>Git</h2>
+        <p>Sistema de controle de versão distribuído para rastrear mudanças no código.</p><br>
+        
+        <div>
+          <p><strong>Configuração inicial:</strong></p>
+          <ul>
+            <li><strong>git init</strong> (Inicializa um repositório Git)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Comandos básicos:</strong></p>
+          <ul>
+            <li><strong>git add .</strong> (Adiciona todos os arquivos para embalar)</li>
+            <li><strong>git add arquivo.txt</strong> (Adiciona arquivo específico para embalar)</li>
+            <li><strong>git commit -m "mensagem"</strong> (Embala todos os arquivos selecionados)</li>
+            <li><strong>git status</strong> (Mostra o status dos arquivos)</li>
+            <li><strong>git log</strong> (Mostra o histórico de commits)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Trabalhando com repositórios remotos:</strong></p>
+          <ul>
+            <li><strong>git clone url</strong> (Clona um repositório remoto)</li>
+            <li><strong>git remote add origin url</strong> (Adiciona um repositório remoto)</li>
+            <li><strong>git push origin main</strong> (É o caminhão que envia a embalagem pronta)</li>
+            <li><strong>git pull origin main</strong> (Baixa e mescla mudanças do repositório remoto)</li>
+            <li><strong>git fetch</strong> (Baixa mudanças sem mesclar)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Branches (ramificações):</strong></p>
+          <ul>
+            <li><strong>git branch</strong> (Lista todas as branches)</li>
+            <li><strong>git branch nome-branch</strong> (Cria uma nova branch)</li>
+            <li><strong>git checkout nome-branch</strong> (Muda para uma branch)</li>
+            <li><strong>git checkout -b nome-branch</strong> (Cria e muda para uma nova branch)</li>
+            <li><strong>git merge nome-branch</strong> (Mescla uma branch na branch atual)</li>
+            <li><strong>git branch -d nome-branch</strong> (Deleta uma branch)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Desfazendo mudanças:</strong></p>
+          <ul>
+            <li><strong>git reset arquivo.txt</strong> (Remove arquivo da embalagem)</li>
+            <li><strong>git reset --soft HEAD~1</strong> (Desfaz último commit, mantém mudanças)</li>
+            <li><strong>git reset --hard HEAD~1</strong> (Desfaz último commit e mudanças)</li>
+            <li><strong>git checkout -- arquivo.txt</strong> (Descarta mudanças não commitadas)</li>
+            <li><strong>git stash</strong> (Guarda mudanças temporariamente)</li>
+            <li><strong>git stash pop</strong> (Reaplica mudanças guardadas)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Fluxo de trabalho recomendado:</strong></p>
+          <ul>
+            <li><strong>1. git add .</strong> (Preparar arquivos)</li>
+            <li><strong>2. git commit -m "descrição"</strong> (Salvar localmente)</li>
+            <li><strong>3. git pull origin main</strong> (Baixar mudanças remotas)</li>
+            <li><strong>4. git push origin main</strong> (Enviar para repositório remoto)</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Analogia da fábrica:</strong></p>
+          <ul>
+            <li><strong>git add</strong> = Colocar produtos na esteira de produção 📦</li>
+            <li><strong>git commit</strong> = Embalar produtos numa caixa com etiqueta 🏷️</li>
+            <li><strong>git push</strong> = Caminhão entrega as caixas ao cliente 🚚</li>
+            <li><strong>git pull</strong> = Receber produtos do fornecedor pra depois embalar os que quer com commit 📥</li>
+          </ul>
+        </div>
       </section>
     </main>
     
